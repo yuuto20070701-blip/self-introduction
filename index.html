@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自己紹介 | Y</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: #263238;
+      background: linear-gradient(135deg, #e8f3ff, #f5edff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 16px;
+    }
+    main {
+      width: min(100%, 680px);
+      background: rgba(255,255,255,.94);
+      border-radius: 22px;
+      padding: 42px 36px;
+      box-shadow: 0 12px 35px rgba(49, 74, 112, .12);
+    }
+    .eyebrow {
+      color: #687f9e;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      margin: 0 0 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 3rem);
+      color: #345b83;
+    }
+    .line {
+      width: 58px;
+      height: 4px;
+      border-radius: 4px;
+      background: #9bbce2;
+      margin: 20px 0 28px;
+    }
+    .intro {
+      font-size: 1.05rem;
+      line-height: 2;
+      margin: 0 0 28px;
+    }
+    .interests {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin: 22px 0 30px;
+    }
+    .interest {
+      background: #f1f6fc;
+      border-radius: 15px;
+      padding: 20px 14px;
+      text-align: center;
+    }
+    .interest .icon { font-size: 2rem; display: block; margin-bottom: 8px; }
+    .interest strong { color: #345b83; }
+    .report {
+      background: #faf7ff;
+      border-left: 4px solid #b6a1df;
+      border-radius: 8px 14px 14px 8px;
+      padding: 18px 20px;
+      line-height: 1.9;
+    }
+    .report h2 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      color: #66518e;
+    }
+    footer {
+      text-align: center;
+      color: #8190a1;
+      font-size: .85rem;
+      margin-top: 28px;
+    }
+    @media (max-width: 480px) {
+      main { padding: 30px 22px; }
+      .interests { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">PROFILE</p>
+    <h1>自己紹介</h1>
+    <div class="line"></div>
+
+    <p class="intro">
+      こんにちは。私は自分のことを<strong>Y</strong>と称します。
+      趣味は音楽を聞くことと、ゲームをすることです。
+      普段から好きな音楽を聞いたり、さまざまなゲームを楽しんだりしています。
+    </p>
+
+    <section class="interests" aria-label="趣味">
+      <div class="interest">
+        <span class="icon" aria-hidden="true">🎧</span>
+        <strong>音楽を聞くこと</strong>
+      </div>
+      <div class="interest">
+        <span class="icon" aria-hidden="true">🎮</span>
+        <strong>ゲームをすること</strong>
+      </div>
+    </section>
+
+    <section class="report">
+      <h2>このWebサイトについて</h2>
+      <p>
+        今回、大学のレポート課題として、HTML・CSS・JavaScriptを使った
+        Webサイトを作成しました。自己紹介を通して、Webページの作り方を
+        学ぶことができました。
+      </p>
+    </section>
+
+    <footer>© Y's Profile</footer>
+  </main>
+</body>
+</html>
